@@ -109,7 +109,9 @@ margin-bottom: 1.0625rem;
     margin: 0 auto;
     padding: 0 7.5rem;
 }
-
+.error {
+    color: red;
+}
 .formstepper__wrapper {
     --window-height: 599px;
     padding: 1.875rem 0;
@@ -387,24 +389,24 @@ margin-bottom: 1.0625rem;
     pointer-events: none;
 }
 
-.formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar {
+.formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar, .formstepper__body__StepSeven::-webkit-scrollbar {
     width: 8px; /* Adjust this value to change scrollbar width */
   }
   
   /* Track */
-  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-track {
+  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-track, .formstepper__body__StepSeven::-webkit-scrollbar-track {
     background: transparent;
   }
   
   /* Handle */
-  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-thumb {
+  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-thumb , .formstepper__body__StepSeven::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 20px;
 
   }
   
   /* Handle on hover */
-  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-thumb:hover {
+  .formstepper__wrapper .formstepper__body__StepEight::-webkit-scrollbar-thumb:hover , .formstepper__body__StepSeven::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
 
@@ -412,6 +414,104 @@ margin-bottom: 1.0625rem;
     border-color: #f0ff00 !important;
   }
 
+
+
+   .formstepper__wrapper .formstepper__body__StepSeven {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 190px);
+    overflow-y: auto;
+}
+
+ .formstepper__wrapper .formstepper__body .formstepper__form .form__group {
+    width: 100%;
+}
+ .formstepper__wrapper .formstepper__body .formstepper__form .form__group label {
+    font-weight: 300;
+    color: #fff;
+    line-height: 100%;
+    font-size: 1rem;
+    display: flex;
+    margin-bottom: .4375rem;
+}
+ .formstepper__wrapper .formstepper__body .formstepper__form .form__group input {
+    width: 100%;
+    border-radius: .1875rem;
+    background-color: #fff;
+    padding: .625rem .875rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 100%;
+    color: #003049;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+ .formstepper__wrapper .formstepper__body .formstepper__form .form__group select {
+    width: 100%;
+    border-radius: .1875rem;
+    background-color: #fff;
+    padding: .625rem .875rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 100%;
+    color: #8291ac;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 9.5L12.5 15.5L18.5 9.5' stroke='%238291AC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: calc(100% - 10px);
+    cursor: pointer;
+    color: #003049;
+}
+  .formstepper__bg.theme__yellow, .FormStepper_formstepper__npg1d .formstepper__bg.theme__yellow .formstepper__wrapper .formstepper__header {
+    background-color: #f0ff00 !important;
+}
+ .formstepper__bg.theme__yellow .formstepper__footer h6 {
+    font-family: Exo;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    line-height: 100%;
+    color: #003049;
+    font-size: 1rem;
+    text-align: center;
+}
+
+ .formstepper__bg.theme__yellow .formstepper__body_End_Wrapper {
+    max-height: calc(100vh - 260px);
+    overflow-y: auto;
+}
+
+ .formstepper__wrapper .formstepper__body .h1.h1_name {
+    word-break: break-word;
+}
+
+ .formstepper__bg.theme__yellow .formstepper__body .h1,  .formstepper__bg.theme__yellow .formstepper__body p {
+    color: #003049;
+}
+ .formstepper__bg.theme__yellow .formstepper__body .h1,  .formstepper__bg.theme__yellow .formstepper__body p {
+    color: #003049;
+}
+
+ .formstepper__bg.theme__yellow .formstepper__body .l-btn {
+    display: inline-block;
+    border-radius: 6.25rem !important;
+    border: .0625rem solid #003049 !important;
+    line-height: 100%;
+    font-weight: 500;
+    color: #003049;
+    margin-top: 1.125rem;
+    padding: .75rem 1.4375rem;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
 @media screen and (min-width: 769px) {
       .formstepper__wrapper .formstepper__footer {
         padding: 4.125rem 0;
@@ -431,7 +531,11 @@ margin-bottom: 1.0625rem;
         row-gap: 1.75rem;
         column-gap: 2.5rem;
     }
-   
+     .formstepper__bg.theme__yellow .formstepper__body .l-btn {
+        margin-top: 1.75rem;
+        padding: .9375rem 1.4375rem;
+        font-size: 1.25rem;
+    }
   .formstepper__wrapper .formstepper__body__StepEight {
         height: calc(100vh - 320px);
     }
@@ -447,7 +551,28 @@ margin-bottom: 1.0625rem;
       .formstepper__wrapper .formstepper__footer {
         padding: 4.125rem 0;
     }
+     .formstepper__wrapper .formstepper__body__StepSeven {
+        height: calc(100vh - 320px);
+    }
+     .formstepper__wrapper .formstepper__body .formstepper__form .form__group input {
+        padding: .9375rem 1.5rem;
+        font-size: 1.25rem;
+    }
+     .formstepper__wrapper .formstepper__body .formstepper__form .form__group.w_50 {
+        width: calc(50% - 20px);
+    }
+     .formstepper__wrapper .formstepper__body .formstepper__form .form__group select {
+        background-size: 1.5rem;
+        background-position: calc(100% - 20px);
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+    }
+     .formstepper__bg.theme__yellow .formstepper__footer {
+        padding-bottom: 5rem;
+    }
 }
+
+
 @media screen and (min-width: 640px) {
       .formstepper__wrapper .formstepper__body .icon__card li {
         width: 25%;

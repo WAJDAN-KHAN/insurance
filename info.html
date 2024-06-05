@@ -443,9 +443,9 @@
                                                 </label></button></div>
                                     </li>
                                 </ul>
-                                <div class="formstepper__footer"><button title="Submit" class="l_continue"
-                                        type="submit">Continue<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 60 22" width="66" height="32">
+                                <div class="formstepper__footer"><button title="Submit" onclick="showForthComponent()"
+                                        class="l_continue" type="submit">Continue<svg xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 60 22" width="66" height="32">
                                             <rect width="60" height="22" fill="#003049" fill-opacity="0.13" rx="4"
                                                 style="fill: rgb(0, 48, 73); fill-opacity: 0.13;"></rect>
                                             <path fill="#003049"
@@ -465,10 +465,335 @@
     </div>
 
 
+    <!-- Fourth Component -->
+    <div class="mainSection" id="forthComponent" style="display: none;">
+        <div class="formstepper__bg">
+            <div class="mainContainer">
+                <div class="formstepper__wrapper">
+                    <div class="formstepper__header">
+                        <div class="header_logoMenuWrapper__kSFlK">
+                            <a title="Brightway" class="custommm" href="index.html">
+                                <img alt="company logo" fetchpriority="high" decoding="async" data-nimg="1"
+                                    style="color:transparent; object-fit: contain;"
+                                    src="images/IMG-20240401-WA0109-removebg-preview.png">
+                            </a>
+                        </div>
+                        <div class="d-flex" style="display: flex; gap: 10px; align-items: center;">
+                            <div class="close_btn">
+                                <a href="#" onclick="showThirdComponent()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M4 7h10a6 6 0 0 1 0 12H4M4 7l4-4M4 7l4 4"></path>
+                                    </svg>
+                                    Back
+                                </a>
+                            </div>
+                            <div class="close_btn">
+                                <a href="index.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M36 12 12 36m0-24 24 24"
+                                            style="stroke: #fff; stroke-opacity: 1;">
+                                        </path>
+                                    </svg>
+                                    Close
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="formstepper__body">
+                            <h1 class="h1">How can we get in touch?</h1>
+
+                            <form action="" class="formstepper__form" id="stepper-fourth-step">
+                                <div class="form__group w_50">
+                                    <label for="email">Email</label>
+                                    <input id="email" data-testid="email" value="">
+                                    <div id="emailError" class="error"></div>
+                                </div>
+                                <div class="form__group w_50">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input id="phoneNumber" data-testid="phone-number" value="">
+                                </div>
+                                <div class="formstepper__footer"><button title="Submit" onclick="showFifthComponent()"
+                                        class="l_continue" type="submit">Continue<svg xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 60 22" width="66" height="32">
+                                            <rect width="60" height="22" fill="#003049" fill-opacity="0.13" rx="4"
+                                                style="fill: rgb(0, 48, 73); fill-opacity: 0.13;"></rect>
+                                            <path fill="#003049"
+                                                d="M6.959 15V6.273h3.11q1.02 0 1.688.37.669.372 1.002 1.015.332.639.332 1.44 0 .806-.337 1.449a2.44 2.44 0 0 1-1.005 1.014q-.67.37-1.684.37H7.926v-1.116h2.02q.643 0 1.044-.221.4-.225.588-.614.188-.387.188-.882t-.188-.878a1.35 1.35 0 0 0-.592-.6q-.401-.218-1.057-.218H8.276V15zm7.573 0V8.455h1.232v1.04h.068q.18-.53.63-.832a1.8 1.8 0 0 1 1.032-.306 5 5 0 0 1 .541.03v1.218a2 2 0 0 0-.273-.047q-.195-.03-.392-.03-.451 0-.805.192a1.43 1.43 0 0 0-.759 1.283V15zm7.192.132q-.967 0-1.666-.413a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183a2.6 2.6 0 0 1 .933.575q.414.391.652 1.018.24.623.239 1.513v.452h-5.204v-.955h3.955a1.9 1.9 0 0 0-.204-.89 1.55 1.55 0 0 0-.576-.618 1.6 1.6 0 0 0-.86-.226q-.537 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933a2.5 2.5 0 0 1-.933.618 3.5 3.5 0 0 1-1.275.217m9.127-5.08-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.417-.328 1.5 1.5 0 0 0-.66-.128q-.543 0-.904.243-.363.24-.363.618 0 .329.243.528.243.2.785.329l1.04.238q.902.21 1.346.644.443.435.443 1.129 0 .588-.34 1.048-.338.456-.943.716-.6.26-1.393.26-1.1 0-1.794-.469-.695-.472-.852-1.342l1.231-.187q.115.48.473.728.358.243.933.243.627 0 1.002-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.695-.315l-1.108-.243q-.915-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.062 0 1.67.46.61.457.806 1.224m6.434 0-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.418-.328 1.5 1.5 0 0 0-.66-.128q-.541 0-.904.243-.362.24-.362.618 0 .329.243.528.243.2.784.329l1.04.238q.903.21 1.346.644t.444 1.129q0 .588-.341 1.048-.337.456-.942.716-.6.26-1.394.26-1.098 0-1.793-.469-.696-.472-.853-1.342l1.232-.187q.114.48.473.728.358.243.933.243.627 0 1.001-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.694-.315l-1.108-.243q-.917-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.06 0 1.67.46.61.457.806 1.224"
+                                                style="fill: rgb(0, 48, 73); fill-opacity: 1;"></path>
+                                            <path stroke="#003049" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="1.167"
+                                                d="M42.332 6.334v.816c0 1.96 0 2.94.382 3.69a3.5 3.5 0 0 0 1.53 1.529c.748.381 1.728.381 3.688.381h3.733m0 0L48.75 9.834m2.916 2.916-2.916 2.917"
+                                                style="stroke: rgb(0, 48, 73); stroke-opacity: 1;"></path>
+                                        </svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- fifth  Component -->
+    <div class="fifthComponent mainSection" id="fifthComponent" style="display: none;">
+        <div class="formstepper__bg">
+            <div class="mainContainer">
+                <div class="formstepper__wrapper">
+                    <div class="formstepper__header">
+                        <div class="header_logoMenuWrapper__kSFlK">
+                            <a title="Brightway" class="custommm" href="index.html">
+                                <img alt="company logo" fetchpriority="high" decoding="async" data-nimg="1"
+                                    style="color:transparent; object-fit: contain;"
+                                    src="images/IMG-20240401-WA0109-removebg-preview.png">
+                            </a>
+                        </div>
+                        <div class="d-flex" style="display: flex; gap: 10px; align-items: center;">
+                            <div class="close_btn">
+                                <a href="#" onclick="showForthComponent()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M4 7h10a6 6 0 0 1 0 12H4M4 7l4-4M4 7l4 4"></path>
+                                    </svg>
+                                    Back
+                                </a>
+                            </div>
+                            <div class="close_btn">
+                                <a href="index.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M36 12 12 36m0-24 24 24"
+                                            style="stroke: #fff; stroke-opacity: 1;">
+                                        </path>
+                                    </svg>
+                                    Close
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="formstepper__body__StepSeven">
+                            <div class="formstepper__body">
+                                <h2 class="h1">What is your address?</h2>
+                                <form action="" class="formstepper__form" id="stepper-sixth-step">
+                                    <div class="form__group"><label for="address1">Insured Property
+                                            Address</label><input id="address1" data-testid="address-1" value=""></div>
+                                    <div class="form__group"><label for="address2">Apt / Suite #</label><input
+                                            placeholder="" id="address2" data-testid="address-2" value=""></div>
+                                    <div class="form__group"><label for="city">City</label><input placeholder=""
+                                            id="city" data-testid="city" value=""></div>
+                                    <div class="form__group w_50"><label for="state">State</label><select id="state"
+                                            data-testid="state">
+                                            <option value="" disabled="" hidden="">Select State</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select></div>
+                                    <div class="form__group w_50"><label for="postalCode">Zip Code</label><input
+                                            placeholder="" id="postalCode" data-testid="postal-code" inputmode="numeric"
+                                            minlength="5" maxlength="5" type="text" value=""></div>
+                                    <div class="formstepper__footer">
+                                        <a href="#">
+                                            <button title="Submit" class="l_continue" onclick="showSixthComponent()"
+                                                type="submit">Continue<svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none" viewBox="0 0 60 22" width="66" height="32">
+                                                    <rect width="60" height="22" fill="#003049" fill-opacity="0.13"
+                                                        rx="4" style="fill: rgb(0, 48, 73); fill-opacity: 0.13;"></rect>
+                                                    <path fill="#003049"
+                                                        d="M6.959 15V6.273h3.11q1.02 0 1.688.37.669.372 1.002 1.015.332.639.332 1.44 0 .806-.337 1.449a2.44 2.44 0 0 1-1.005 1.014q-.67.37-1.684.37H7.926v-1.116h2.02q.643 0 1.044-.221.4-.225.588-.614.188-.387.188-.882t-.188-.878a1.35 1.35 0 0 0-.592-.6q-.401-.218-1.057-.218H8.276V15zm7.573 0V8.455h1.232v1.04h.068q.18-.53.63-.832a1.8 1.8 0 0 1 1.032-.306 5 5 0 0 1 .541.03v1.218a2 2 0 0 0-.273-.047q-.195-.03-.392-.03-.451 0-.805.192a1.43 1.43 0 0 0-.759 1.283V15zm7.192.132q-.967 0-1.666-.413a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183a2.6 2.6 0 0 1 .933.575q.414.391.652 1.018.24.623.239 1.513v.452h-5.204v-.955h3.955a1.9 1.9 0 0 0-.204-.89 1.55 1.55 0 0 0-.576-.618 1.6 1.6 0 0 0-.86-.226q-.537 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933a2.5 2.5 0 0 1-.933.618 3.5 3.5 0 0 1-1.275.217m9.127-5.08-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.417-.328 1.5 1.5 0 0 0-.66-.128q-.543 0-.904.243-.363.24-.363.618 0 .329.243.528.243.2.785.329l1.04.238q.902.21 1.346.644.443.435.443 1.129 0 .588-.34 1.048-.338.456-.943.716-.6.26-1.393.26-1.1 0-1.794-.469-.695-.472-.852-1.342l1.231-.187q.115.48.473.728.358.243.933.243.627 0 1.002-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.695-.315l-1.108-.243q-.915-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.062 0 1.67.46.61.457.806 1.224m6.434 0-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.418-.328 1.5 1.5 0 0 0-.66-.128q-.541 0-.904.243-.362.24-.362.618 0 .329.243.528.243.2.784.329l1.04.238q.903.21 1.346.644t.444 1.129q0 .588-.341 1.048-.337.456-.942.716-.6.26-1.394.26-1.098 0-1.793-.469-.696-.472-.853-1.342l1.232-.187q.114.48.473.728.358.243.933.243.627 0 1.001-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.694-.315l-1.108-.243q-.917-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.06 0 1.67.46.61.457.806 1.224"
+                                                        style="fill: rgb(0, 48, 73); fill-opacity: 1;"></path>
+                                                    <path stroke="#003049" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.167"
+                                                        d="M42.332 6.334v.816c0 1.96 0 2.94.382 3.69a3.5 3.5 0 0 0 1.53 1.529c.748.381 1.728.381 3.688.381h3.733m0 0L48.75 9.834m2.916 2.916-2.916 2.917"
+                                                        style="stroke: rgb(0, 48, 73); stroke-opacity: 1;"></path>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sisthComponent  Component -->
+    <div class="  mainSection" id="sisthComponent" style="display: none;">
+        <div class="formstepper__bg">
+            <div class="mainContainer">
+                <div class="formstepper__wrapper">
+                    <div class="formstepper__header">
+                        <div class="header_logoMenuWrapper__kSFlK">
+                            <a title="Brightway" class="custommm" href="index.html">
+                                <img alt="company logo" fetchpriority="high" decoding="async" data-nimg="1"
+                                    style="color:transparent; object-fit: contain;"
+                                    src="images/IMG-20240401-WA0109-removebg-preview.png">
+                            </a>
+                        </div>
+                        <div class="d-flex" style="display: flex; gap: 10px; align-items: center;">
+                            <div class="close_btn">
+                                <a href="#" onclick="showFifthComponent()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M4 7h10a6 6 0 0 1 0 12H4M4 7l4-4M4 7l4 4"></path>
+                                    </svg>
+                                    Back
+                                </a>
+                            </div>
+                            <div class="close_btn">
+                                <a href="index.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#ffff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M36 12 12 36m0-24 24 24"
+                                            style="stroke: #fff; stroke-opacity: 1;">
+                                        </path>
+                                    </svg>
+                                    Close
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="formstepper__body">
+                                <h2 class="h1">How did you hear about<br> us?</h2>
+                                <form action="" class="formstepper__form" id="stepper-ninth-step">
+                                    <div class="form__group"><label for="origin">Let Us Know</label><input
+                                            placeholder="" id="origin" data-testid="origin" value=""></div>
+
+                                    <div class="formstepper__footer">
+                                        <a href="#">
+                                            <button title="Submit" class="l_continue" onclick="showLastComponent()"
+                                                type="submit">Submit for a
+                                                quote<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 60 22" width="66" height="32">
+                                                    <rect width="60" height="22" fill="#003049" fill-opacity="0.13"
+                                                        rx="4" style="fill: rgb(0, 48, 73); fill-opacity: 0.13;"></rect>
+                                                    <path fill="#003049"
+                                                        d="M6.959 15V6.273h3.11q1.02 0 1.688.37.669.372 1.002 1.015.332.639.332 1.44 0 .806-.337 1.449a2.44 2.44 0 0 1-1.005 1.014q-.67.37-1.684.37H7.926v-1.116h2.02q.643 0 1.044-.221.4-.225.588-.614.188-.387.188-.882t-.188-.878a1.35 1.35 0 0 0-.592-.6q-.401-.218-1.057-.218H8.276V15zm7.573 0V8.455h1.232v1.04h.068q.18-.53.63-.832a1.8 1.8 0 0 1 1.032-.306 5 5 0 0 1 .541.03v1.218a2 2 0 0 0-.273-.047q-.195-.03-.392-.03-.451 0-.805.192a1.43 1.43 0 0 0-.759 1.283V15zm7.192.132q-.967 0-1.666-.413a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183a2.6 2.6 0 0 1 .933.575q.414.391.652 1.018.24.623.239 1.513v.452h-5.204v-.955h3.955a1.9 1.9 0 0 0-.204-.89 1.55 1.55 0 0 0-.576-.618 1.6 1.6 0 0 0-.86-.226q-.537 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933a2.5 2.5 0 0 1-.933.618 3.5 3.5 0 0 1-1.275.217m9.127-5.08-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.417-.328 1.5 1.5 0 0 0-.66-.128q-.543 0-.904.243-.363.24-.363.618 0 .329.243.528.243.2.785.329l1.04.238q.902.21 1.346.644.443.435.443 1.129 0 .588-.34 1.048-.338.456-.943.716-.6.26-1.393.26-1.1 0-1.794-.469-.695-.472-.852-1.342l1.231-.187q.115.48.473.728.358.243.933.243.627 0 1.002-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.695-.315l-1.108-.243q-.915-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.062 0 1.67.46.61.457.806 1.224m6.434 0-1.155.205a1.4 1.4 0 0 0-.23-.422 1.14 1.14 0 0 0-.418-.328 1.5 1.5 0 0 0-.66-.128q-.541 0-.904.243-.362.24-.362.618 0 .329.243.528.243.2.784.329l1.04.238q.903.21 1.346.644t.444 1.129q0 .588-.341 1.048-.337.456-.942.716-.6.26-1.394.26-1.098 0-1.793-.469-.696-.472-.853-1.342l1.232-.187q.114.48.473.728.358.243.933.243.627 0 1.001-.26.375-.264.375-.643a.67.67 0 0 0-.23-.516q-.225-.21-.694-.315l-1.108-.243q-.917-.21-1.355-.665-.435-.456-.435-1.155 0-.579.324-1.014a2.1 2.1 0 0 1 .895-.678q.57-.247 1.308-.247 1.06 0 1.67.46.61.457.806 1.224"
+                                                        style="fill: rgb(0, 48, 73); fill-opacity: 1;"></path>
+                                                    <path stroke="#003049" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.167"
+                                                        d="M42.332 6.334v.816c0 1.96 0 2.94.382 3.69a3.5 3.5 0 0 0 1.53 1.529c.748.381 1.728.381 3.688.381h3.733m0 0L48.75 9.834m2.916 2.916-2.916 2.917"
+                                                        style="stroke: rgb(0, 48, 73); stroke-opacity: 1;"></path>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- last  Component -->
+    <div class="  mainSection" id="lastComponent" style="display: none; background-color: #f0ff00 !important;">
+        <div class="formstepper__bg formstepper__bg theme__yellow">
+            <div class="mainContainer">
+                <div class="formstepper__wrapper">
+                    <div class="formstepper__header" style="background-color: #f0ff00 !important;">
+                        <div class="header_logoMenuWrapper__kSFlK">
+                            <a title="Brightway" class="custommm" href="index.html">
+                                <img alt="company logo" fetchpriority="high" decoding="async" data-nimg="1"
+                                    style="color:transparent; object-fit: contain;"
+                                    src="images/IMG-20240401-WA0109-removebg-preview.png">
+                            </a>
+                        </div>
+                        <div class="d-flex" style="display: flex; gap: 10px; align-items: center;">
+
+                            <div class="close_btn">
+                                <a href="index.html" style="color: #003049 !important;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" class="svg"
+                                        width="24" height="24">
+                                        <path stroke="#003049" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M36 12 12 36m0-24 24 24"
+                                            style="stroke: #003049; stroke-opacity: 1;">
+                                        </path>
+                                    </svg>
+                                    Close
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="formstepper__body_End_Wrapper">
+                            <div class="formstepper__body">
+                                <h2 class="h1 h1_name">Thank you. <br> You’re all set, sd.</h2>
+                                <p>We will reach out to you in the next 24 hours.</p><a class="l-btn"
+                                    href="index.html">Back to
+                                    Home</a>
+                            </div>
+                        </div>
+                        <div class="formstepper__footer">
+                            <h6>Get ready for a brighter way to do insurance</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -502,18 +827,63 @@
         function showFirstComponent() {
             document.getElementById("firstComponent").style.display = "block";
             document.getElementById("secondComponent").style.display = "none";
-            document.getElementById("thirdComponent").style.display = "none"; // Hide the third component
+            document.getElementById("thirdComponent").style.display = "none";
+            document.getElementById("forthComponent").style.display = "none";
         }
+
         function showSecondComponent() {
             document.getElementById("firstComponent").style.display = "none";
             document.getElementById("secondComponent").style.display = "block";
-            document.getElementById("thirdComponent").style.display = "none"; // Hide the third component
+            document.getElementById("thirdComponent").style.display = "none";
+            document.getElementById("forthComponent").style.display = "none";
         }
 
         function showThirdComponent() {
             document.getElementById("secondComponent").style.display = "none";
             document.getElementById("thirdComponent").style.display = "block";
+            document.getElementById("forthComponent").style.display = "none";
         }
+
+        function showForthComponent() {
+            document.getElementById("thirdComponent").style.display = "none";
+            document.getElementById("forthComponent").style.display = "block";
+            document.getElementById("fifthComponent").style.display = "none";
+
+        }
+        function showFifthComponent() {
+            document.getElementById("forthComponent").style.display = "none";
+            document.getElementById("fifthComponent").style.display = "block";
+            document.getElementById("sisthComponent").style.display = "none";
+
+        }
+        function showSixthComponent() {
+            document.getElementById("fifthComponent").style.display = "none";
+            document.getElementById("sisthComponent").style.display = "block";
+        }
+
+        function showLastComponent() {
+            document.getElementById("sisthComponent").style.display = "none";
+            document.getElementById("lastComponent").style.display = "block";
+        }
+
+
+        $(document).ready(function () {
+            $('#stepper-fourth-step').submit(function (event) {
+                event.preventDefault(); // Prevent default form submission behavior
+
+                var email = $('#email').val();
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!emailPattern.test(email)) {
+                    $('#emailError').text('Please enter a valid email address.');
+                } else {
+                    $('#emailError').text('');
+                    // Continue to the next step or handle the form submission
+                    document.getElementById("fifthComponent").style.display = "block";
+
+                }
+            });
+        });
     </script>
     <script>
         function showFirstComponent() {

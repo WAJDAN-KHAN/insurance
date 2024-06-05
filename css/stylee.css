@@ -96,6 +96,7 @@ margin-bottom: 1.0625rem;
     top: 0;
     z-index: 999;
     overflow-y: auto;
+    background-color: #1888ac;
 }
 
 .formstepper__bg {

@@ -102,11 +102,14 @@ margin-bottom: 1.0625rem;
 .formstepper__bg {
     background-color: #1888ac;
     color: #fff;
+    height: 100%;
 }
 
 .mainContainer {
     max-width: 100%;
     margin: 0 auto;
+    height: 100%;
+background-color: #1888ac;
     padding: 0 7.5rem;
 }
 .error {
@@ -168,10 +171,10 @@ margin-bottom: 1.0625rem;
 }
   .formstepper__body .h1 b {
     font-weight: 300;
-    color: #f0ff00;
+    color: #003049;
 }
  .formstepper__body p {
-    color: #8291ac;
+    color: #003049;
     line-height: 100%;
     font-weight: 300;
     font-size: 2.5rem;
@@ -201,11 +204,16 @@ margin-bottom: 1.0625rem;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 100%;
-    color: #003049;
+    color: #fff;
     cursor: pointer;
     pointer-events: all;
     letter-spacing: .0625rem;
 }
+.formstepper__wrapper .formstepper__footer .l_continue:hover {
+ 
+    color: #003049;
+    
+} 
   .formstepper__wrapper .formstepper__body .formstepper__form {
     display: flex;
     flex-wrap: wrap;
